@@ -131,11 +131,10 @@ create_checksum()
 load_config_file
 get_date
 prepare_target_directory
-MNT_USER="user"
-MNT_PASSWORD="123456789"
+
 
 cd $NEXTCLOUD_WEB_DIRECTORY
-sudo mount  //10.10.2.104/backups /mnt/backups -o rw,user=$MNT_USER,pass=$MNT_PASSWORD,file_mode=0777,dir_mode=0777
+sudo mount  $MNT_FOLDER $TARGET_FOLDER -o rw,user=$MNT_USER,pass=$MNT_PASSWORD,file_mode=0644,dir_mode=0777
 set_maintenance_mode_via_config 1
 prepare_target_directory
 backup_database
