@@ -1,3 +1,4 @@
+#rename to nextcloud.conf
 NEXTCLOUD_WEB_DIRECTORY=/var/www/nextcloud
 NEXTCLOUD_DATA_DIRECTORY=/nextcloud/
 NEXTCLOUD_CONFIG_FILE=/var/www/nextcloud/config/config.php
